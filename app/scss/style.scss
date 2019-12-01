@@ -165,7 +165,7 @@
 //end header
 
 //start search
-.search {  
+.search {
   max-height: 730px;
   background-color: #294cce;
   text-align: center;
@@ -187,7 +187,7 @@
     font-weight: 500;
     font-size: 20px;
     padding-bottom: 65px;
-  }  
+  }
   .btn-page {
     border: 1px solid #fff;
   }
@@ -204,7 +204,7 @@
     min-height: 136px;
     border-radius: 5px;
     position: absolute;
-    bottom: -68px;    
+    bottom: -68px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,7 +215,7 @@
       max-width: 1115px;
       width: 100%;
       border-radius: 5px;
-      background-color:rgba(#fff, .5);
+      background-color: rgba(#fff, 0.5);
       min-height: 136px;
       z-index: -1;
     }
@@ -226,7 +226,7 @@
       max-width: 1070px;
       width: 100%;
       border-radius: 5px;
-      background-color:rgba(#fff, .5);
+      background-color: rgba(#fff, 0.5);
       min-height: 136px;
       z-index: -1;
     }
@@ -235,8 +235,6 @@
       max-width: 1060px;
       width: 100%;
     }
-  }
-  form {
   }
   input,
   select,
@@ -282,7 +280,7 @@
 
 //star virtues
 .virtues {
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 .virtues__inner {
@@ -290,14 +288,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &-item{
+  &-item {
     max-width: 360px;
     padding: 40px 30px 0 30px;
     text-align: center;
     border-radius: 3px;
-    &:hover{
+    &:hover {
       box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
-      transition: all .3s;
+      transition: all 0.3s;
     }
   }
 }
@@ -310,15 +308,170 @@
   font-size: 24px;
   color: #000;
   margin: 25px 0 30px;
-
 }
 .virtues__item-text {
   color: #555555;
   padding-bottom: 40px;
   line-height: 30px;
 }
-
-
-
-
 //end virtues
+
+//start weklyProduct
+.weklyProduct {
+  background-color: $bgheader;
+  padding: 120px 0;
+  &__title {
+    height: 110px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 5px;
+    margin-bottom: 50px;
+    &-text {
+      margin-left: 30px;
+      font-weight: 500;
+      font-size: 30px;
+    }
+    &-btnSlider {
+      width: 110px;
+    }
+  }
+  &__slider{
+    .slick-prev,
+    .slick-next{
+      position: absolute;
+      background-color: $purple;
+      color: #fff;
+      font-size: 14px;
+      padding: 15px 0;
+      border: none;
+      top: -130px;
+      cursor: pointer;
+      width: 55px;
+    }
+
+    .slick-prev{     
+      right: 85px;      
+      border-radius: 25px 0 0 25px;      
+    }
+    .slick-next{   
+      right: 30px;     
+      border-radius: 0 25px 25px 0;
+    }
+  }
+}
+
+.weklyProduct__item {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  max-height: 450px;
+  .weklyProduct__item-img {
+    max-width: 555px;
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .weklyProduct__item-content {
+    padding: 50px 50px 20px 50px;
+    max-width: 585px;
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  &-avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &-author {
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 10px;
+    color: #000;
+  }
+  &-platform {
+    margin-left: 15px;
+    padding-left: 25px;
+    color: $purple;
+    position: relative;
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../images/content/platformlogo.png);
+      position: absolute;
+      left: 0;
+      height: 16px;
+      width: 16px;
+    }
+  }
+  &-text {
+    line-height: 30px;
+    color: $text;
+    margin-bottom: 30px;
+  }
+
+  &-tag {
+    a + a {
+      margin-left: 5px;
+    }
+    margin-bottom: 45px;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .item-footer__left {    
+    a {
+      color: #fff;
+      background-color: $bluedeg;
+      font-weight: 500;
+    }
+    span{
+      font-size: 15px;
+      padding-left: 25px;
+      position: relative;
+      margin-left: 20px;
+      &::before{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    .lnr-heart{
+      color: $text;    
+      &::before{
+        color: $purple; 
+              
+      }
+    }
+    .lnr-cart{
+      color: $bluedeg;      
+    }
+  }
+}
+
+//end weklyProduct
