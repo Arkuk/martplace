@@ -7,8 +7,27 @@ html{
   box-sizing: inherit;
 }
 
+body{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container{
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-fluid{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 a{
   display: inline-block;
+  text-decoration: none;
 }
 
 ul,
@@ -16,5 +35,15 @@ li{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.btn-page{  
+  background-color: #294cce;
+  height: 55px;
+  width: 190px;
+  color: #fff;
+  padding: 18px 10px;
+  text-align: center;
+  border-radius: 30px;
 }
 
