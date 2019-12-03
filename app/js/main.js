@@ -20,10 +20,16 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next" ><span class="lnr lnr-chevron-right"></span></button>'
   });
 
+  $('.followers__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: '<button type="button" class="slick-prev" ><span class="lnr lnr-chevron-left"></span></button>',
+    nextArrow: '<button type="button" class="slick-next" ><span class="lnr lnr-chevron-right"></span></button>'
+  });
 
 
 
-
+  
 
   var mixer = mixitup('.products__items');
 
